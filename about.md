@@ -12,4 +12,6 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+email: [me@cero.kr](mailto:me@cero.kr)
+
+linkedin: <a href="http://www.linkedin.com/in/cerowind" target="blank">cerowind</a>
