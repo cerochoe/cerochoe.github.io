@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Senior Research Projects
+title: Senior Research Projects, Spring 2016
 permalink: /projects/csed499/
 ---
 
