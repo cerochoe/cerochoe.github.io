@@ -17,7 +17,7 @@ permalink: /projects/csed499/
 ### References ###
 * R. Azarmehr and R. Laganiere, <a href="http://www.cv-foundation.org/openaccess/content_cvpr_workshops_2015/W12/papers/Azarmehr_Real-Time_Embedded_Age_2015_CVPR_paper.pdf">Real-time Embedded Age and Gender Classification in Unconstrained Video</a>, CVPR, 2015.
 * <a href="https://github.com/GilLevi/AgeGenderDeepLearning">AgeGenderDeepLearning</a>
-* <a herf="http://memkite.com/blog/category/metal-2/">Memkite METAL</a>
+* <a href="http://memkite.com/blog/category/metal-2/">Memkite METAL</a>
 
 ### Course Homepage ###
 * http://dpnm.postech.ac.kr/cs499/
