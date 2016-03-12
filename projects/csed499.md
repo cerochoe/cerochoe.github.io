@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: CSED499
+permalink: /projects/csed499/
 ---
 
 ### Courses ###
