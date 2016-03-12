@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CSED499: Senior Research Project
+title: CSED499
 permalink: /projects/csed499/
 ---
 
