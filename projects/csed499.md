@@ -4,10 +4,10 @@ title: Senior Research Projects
 permalink: /projects/csed499/
 ---
 
-### Topic ###
+### Research Topic ###
 * at <a href="http://cvlab.postech.ac.kr/lab/" target="blank">CV Lab</a>
 
-### Documents ###
+### Project Documents ###
 * Project Proposal
 * Requirements Analysis Document
 * Design Document
