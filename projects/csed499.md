@@ -15,8 +15,9 @@ permalink: /projects/csed499/
 * Final Document and Poster
 
 ### References ###
-* R. Azarmehr and R. Laganiere, <a href="http://www.cv-foundation.org/openaccess/content_cvpr_workshops_2015/W12/papers/Azarmehr_Real-Time_Embedded_Age_2015_CVPR_paper.pdf" target="blank">Real-time Embedded Age and Gender Classification in Unconstrained Video</a>, CVPR, 2015.
-* <a href="https://github.com/GilLevi/AgeGenderDeepLearning" target="blank">AgeGenderDeepLearning</a>
+* *R. Azarmehr and R. Laganiere*{::}, <a href="http://www.cv-foundation.org/openaccess/content_cvpr_workshops_2015/W12/papers/Azarmehr_Real-Time_Embedded_Age_2015_CVPR_paper.pdf" target="blank">Real-time Embedded Age and Gender Classification in Unconstrained Video</a>, CVPR, 2015.
+* M. Mansur and B. Wolfe, <a href="https://www.ipfw.edu/dotAsset/48c39a09-6f1b-4380-b5ad-7de0746e17e7.pdf">Gender Classification of Mobile Application Reviews</a>
+* Gil Levi and Tal Hassner, <a href="https://github.com/GilLevi/AgeGenderDeepLearning" target="blank">AgeGenderDeepLearning</a>
 * <a href="http://memkite.com/blog/category/metal-2/" target="blank">Memkite METAL</a>
 
 ### Course Homepage ###
