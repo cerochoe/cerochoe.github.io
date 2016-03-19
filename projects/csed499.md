@@ -5,7 +5,9 @@ permalink: /projects/csed499/
 ---
 
 ### Research Topic ###
-* at <a href="http://cvlab.postech.ac.kr/lab/" target="blank">CV Lab</a>
+* Embedded Learning Multi-Domain Convolutional Neural Networks for Visual Tracking
+* Advisor: Prof. Bohyung Han
+* <a href="http://cvlab.postech.ac.kr/lab/" target="blank">Computer Vision Lab</a>
 
 ### Project Documents ###
 * Project Proposal
@@ -15,9 +17,10 @@ permalink: /projects/csed499/
 * Final Document and Poster
 
 ### References ###
-* R. Azarmehr and R. Laganiere, <a href="http://www.cv-foundation.org/openaccess/content_cvpr_workshops_2015/W12/papers/Azarmehr_Real-Time_Embedded_Age_2015_CVPR_paper.pdf" target="blank">Real-time Embedded Age and Gender Classification in Unconstrained Video</a>, *CVPR*{::}, 2015.
-* M. Mansur and B. Wolfe, <a href="https://www.ipfw.edu/dotAsset/48c39a09-6f1b-4380-b5ad-7de0746e17e7.pdf">Gender Classification of Mobile Application Reviews</a>
-* Gil Levi and Tal Hassner, *<a href="https://github.com/GilLevi/AgeGenderDeepLearning" target="blank">AgeGenderDeepLearning</a>*{::}
+* Hyeonseob Nam and Bohyung Han, <a href="http://arxiv.org/pdf/1510.07945v2.pdf">Learning Multi-Domain Convolutional Neural Networks for Visual Tracking</a>, *arXiv*{::}, 2015.
+* Si Chen and Yufei Wang, <a href="http://acsweb.ucsd.edu/~yuw176/report/ECE273.pdf">Convolutional Neural Network and Convex Optimization</a>
+* *<a href="https://github.com/jetpacapp/DeepBeliefSDK">DeepBeliefSDK</a>*{::}
+* *<a href="http://deeplearningkit.org/">DeepLearningKit</a>*{::}
 * *<a href="http://memkite.com/blog/category/metal-2/" target="blank">Memkite METAL</a>*{::}
 
 ### Course Homepage ###
