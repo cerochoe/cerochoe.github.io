@@ -10,7 +10,7 @@ permalink: /projects/csed499/
 * <a href="http://cvlab.postech.ac.kr/lab/" target="blank">Computer Vision Lab</a>
 
 ### Project Documents ###
-* Project Proposal
+* [Project Proposal]({{ site.url }}/assets/Proposal_JeongbinChoe.pptx)
 * Requirements Analysis Document
 * Design Document
 * Implementation Document
