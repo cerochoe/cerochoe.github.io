@@ -11,7 +11,7 @@ permalink: /projects/csed499/
 
 ### Project Documents ###
 * [Project Proposal]({{ site.url }}/assets/Proposal_JeongbinChoe.pptx)
-* Requirements Analysis Document
+* [Requirements Analysis Document]({{ site.url }}/assets/Requirements_Analysis_JeongbinChoe.pptx)
 * Design Document
 * Implementation Document
 * Final Document and Poster
