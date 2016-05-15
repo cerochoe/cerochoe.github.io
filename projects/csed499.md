@@ -13,7 +13,7 @@ permalink: /projects/csed499/
 * [Project Proposal]({{ site.url }}/assets/Proposal_JeongbinChoe.pptx)
 * [Requirements Analysis Document]({{ site.url }}/assets/Requirements_Analysis_JeongbinChoe.pptx)
 * [High-level Design Document]({{ site.url }}/assets/Highlevel_Design_JeongbinChoe.pptx)
-* Implementation Document
+* [Detailed Design Document]({{ site.url }}/assets/Detailed_Design_JeongbinChoe.pptx)
 * Final Document and Poster
 
 ### References ###
