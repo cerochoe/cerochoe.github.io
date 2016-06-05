@@ -14,7 +14,7 @@ permalink: /projects/csed499/
 * [Requirements Analysis Document]({{ site.url }}/assets/Requirements_Analysis_JeongbinChoe.pptx)
 * [High-level Design Document]({{ site.url }}/assets/Highlevel_Design_JeongbinChoe.pptx)
 * [Detailed Design Document]({{ site.url }}/assets/Detailed_Design_JeongbinChoe.pptx)
-* Final Document and Poster
+* [Final Document]({{ site.url }}/assets/Final_JeongbinChoe.pdf) and [Poster]({{site.url}}/assets/poster_presentation.pdf)
 
 ### References ###
 * Hyeonseob Nam and Bohyung Han, <a href="http://arxiv.org/pdf/1510.07945v2.pdf">Learning Multi-Domain Convolutional Neural Networks for Visual Tracking</a>, *arXiv*{::}, 2015.
