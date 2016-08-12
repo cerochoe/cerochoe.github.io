@@ -11,7 +11,7 @@ permalink: /about/
 * [Mar 2011 - May 2012] Developer (iOS, Web Server) @ ISEEYOU Co.,ltd (*has been acquired by Kakao Corp.*)   
 
 ### Education ###
-* [Mar 2008 - ] Majoring CSE @ <a href="http://www.postech.edu" target="blank">POSTECH</a>   
+* [Mar 2008 - Aug 2016] Bachelor of CSE @ <a href="http://www.postech.edu" target="blank">POSTECH</a>   
 
 ### Contact me ###
 <a href="mailto:me@cero.kr"><i class="svg-icon email"></i></a>
