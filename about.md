@@ -6,7 +6,8 @@ permalink: /about/
 
 
 ### Experience ###
-* [Apr 2014 - ] Software Engineer (iOS, Web) @ <a href="http://www.iamcompany.net" target="blank">IAMCOMPANY Inc.</a>
+* [Oct 2016 - ] Software Engineer (iOS) @ <a href="http://www.acciio.com" target="blank">Acciio Inc.</a?
+* [Apr 2014 - Oct 2016] Software Engineer (iOS, Web) @ <a href="http://www.iamcompany.net" target="blank">IAMCOMPANY Inc.</a>
 * [Jun 2012 - Mar 2014] Software Engineer (iOS) @ <a href="http://www.kakaocorp.com" target="blank">Kakao Corp.</a>
 * [Mar 2011 - May 2012] Developer (iOS, Web Server) @ ISEEYOU Co.,ltd (*has been acquired by Kakao Corp.*)   
 
