@@ -15,6 +15,6 @@ permalink: /about/
 * [Mar 2008 - Aug 2016] Bachelor of CSE @ <a href="http://www.postech.edu" target="blank">POSTECH</a>   
 
 ### Contact me ###
-<a href="mailto:me@cero.kr"><i class="svg-icon email"></i></a>
+<a href="mailto:cerowind@gmail.com"><i class="svg-icon email"></i></a>
 <a href="http://www.facebook.com/jeongbin.choe" target="blank"><i class="svg-icon facebook"></i></a>
 <a href="http://www.linkedin.com/in/cerowind" target="blank"><i class="svg-icon linkedin"></i></a>   
