@@ -1,3 +1,12 @@
+.name {
+  font-weight: 700;
+}
+
+.description {
+  font-weight: 450;
+  color: #808080;
+}
+
 @media (min-width: 481px) {
   .header {
     margin-top: 3.5rem;
@@ -9,6 +18,7 @@
   
   .description {
     font-size: 1.5rem;
+    margin-left: 1px;
   } 
 }
 

@@ -1,0 +1,21 @@
+.heading {
+  font-weight: 550;
+}
+
+@media (min-width: 481px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .heading {
+    font-size: 1.36rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .heading {
+    font-size: 1.36rem;
+  }
+}
