@@ -1,19 +1,21 @@
+@import '../styles/global.scss';
+
 .name {
   font-weight: 700;
 }
 
 .description {
   font-weight: 440;
-  color: #808080;
+  color: $lightText;
 }
 
 a:link, a:visited, a:hover {
-  color: #3C3C3C;
+  color: $darkText;
   text-decoration: none;
 }
 
 a:active {
-  color: #000000;
+  color: $black;
   text-decoration: none;
 }
 

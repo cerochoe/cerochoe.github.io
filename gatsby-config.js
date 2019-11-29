@@ -5,5 +5,11 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Jeongbin Cero Choe`,
+    siteUrl: `http://cero.kr`
+  },
+  plugins: [
+    `gatsby-plugin-sass`
+  ]
 }
