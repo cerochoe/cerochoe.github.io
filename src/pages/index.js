@@ -1,3 +1,10 @@
 import React from "react"
+import Header from "../components/header"
+import Container from "../components/container"
 
-export default () => <div>Hello world!</div>
+export default () => (
+  <Container>
+    <Header />
+    <p>anti-apple</p>
+  </Container>
+)
