@@ -12,14 +12,16 @@ const experiences = () => (
      title="Software Engineer" 
      position="iOS" 
      at="Acciio Inc." 
-     url="https://acciio.com" />
+     url="https://acciio.com"
+     remark="[1]" />
     <Experience 
      from="Apr 2014"
      to="Oct 2016" 
      title="Software Engineer" 
      position="iOS / Web" 
      at="IAMCOMPANY Inc." 
-     url="http://www.nhnedu.com" />
+     url="http://www.nhnedu.com" 
+     remark="[2]" />
     <Experience
      from="Jun 2012" 
      to="Mar 2014" 
@@ -32,7 +34,8 @@ const experiences = () => (
      to="Jun 2012" 
      title="Software Engineer" 
      position="iOS / Backend" 
-     at="ISEEYOU Co., Ltd." />
+     at="ISEEYOU Co., Ltd." 
+     remark="[3]" />
     <Experience
      from="Jan 2010" 
      to="Feb 2011" 

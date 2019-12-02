@@ -17,13 +17,18 @@ a:active {
   color: $lightText;
 }
 
+.remark {
+  font-weight: 550;
+  position: relative;
+}
+
 @media (min-width: 481px) {
   .experience {
     margin: 0 0 1.2rem 1px;
   }
 
   .period {
-    font-size: 0.72rem;
+    font-size: 0.85rem;
   }
 
   .title {
@@ -36,6 +41,12 @@ a:active {
 
   .at {
     font-size: 1.2rem;
+  }
+
+  .remark {
+    font-size: 0.85rem;
+    top: -0.4rem;
+    left: 1px;
   }
 }
 
@@ -59,6 +70,12 @@ a:active {
   .at {
     font-size: 1.1rem;
   }
+
+  .remark {
+    font-size: 13px;
+    top: -4px;
+    left: 1px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -80,5 +97,11 @@ a:active {
 
   .at {
     font-size: 1rem;
+  }
+
+  .remark {
+    font-size: 12px;
+    top: -4px;
+    left: 1px;
   }
 }
