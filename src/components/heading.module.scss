@@ -11,14 +11,16 @@
 
 @media (min-width: 321px) and (max-width: 480px) {
   .heading {
-    margin-top: 3rem;
-    font-size: 1.36rem;
+    margin-top: 3.2rem;
+    margin-bottom: 1.05rem;
+    font-size: 1.45rem;
   }
 }
 
 @media (max-width: 320px) {
   .heading {
     margin-top: 3rem;
+    margin-bottom: 1rem;
     font-size: 1.36rem;
   }
 }

@@ -53,6 +53,20 @@ const education = () => (
   </div>
 )
 
+const contacts = () => (
+  <div>
+    <a href="http://www.linkedin.com/in/cerowind" target="blank">
+      <i class="svg-icon linkedin contact grayscale" />
+    </a>
+    <a href="http://www.facebook.com/jeongbin.choe" target="blank">
+      <i class="svg-icon facebook contact grayscale" />
+    </a>
+    <a href="mailto:cerowind@gmail.com">
+      <i class="svg-icon email contact grayscale" />
+    </a>
+  </div>
+)
+
 export default () => (
   <Container>
     <Header />
@@ -61,5 +75,6 @@ export default () => (
     <Heading title="Education"/>
     {education()}
     <Heading title="Contacts"/>
+    {contacts()}
   </Container>
 )
