@@ -33,6 +33,23 @@ const experiences = () => (
      title="Software Engineer" 
      position="iOS / Backend" 
      at="ISEEYOU Co., Ltd." />
+    <Experience
+     from="Jan 2010" 
+     to="Feb 2011" 
+     title="Undergraduate Research Assistant"  
+     at="CV Lab at POSTECH" 
+     url="http://cvlab.postech.ac.kr/lab/" />
+  </div>
+)
+
+const education = () => (
+  <div>
+    <Experience
+     from="2008" 
+     to="2016" 
+     title="B.S. in Computer Science and Engineering" 
+     at="POSTECH"
+     url="http://postech.edu" />
   </div>
 )
 
@@ -42,6 +59,7 @@ export default () => (
     <Heading title="Experience"/>
     {experiences()}
     <Heading title="Education"/>
+    {education()}
     <Heading title="Contacts"/>
   </Container>
 )

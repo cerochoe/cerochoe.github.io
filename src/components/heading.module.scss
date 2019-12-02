@@ -4,18 +4,21 @@
 
 @media (min-width: 481px) {
   .heading {
+    margin-top: 5rem;
     font-size: 1.7rem;
   }
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
   .heading {
+    margin-top: 3rem;
     font-size: 1.36rem;
   }
 }
 
 @media (max-width: 320px) {
   .heading {
+    margin-top: 3rem;
     font-size: 1.36rem;
   }
 }
