@@ -8,6 +8,6 @@ function getYear() {
 export default props => (
   <div className={styles.footer}>
     <hr />
-    <p className={styles.content}>© 2018 - <span>{getYear()}</span> CERO.KR</p>
+    <p className={styles.content}>© {props.startyear} - <span>{getYear()}</span> {props.copyright}</p>
   </div>
 )

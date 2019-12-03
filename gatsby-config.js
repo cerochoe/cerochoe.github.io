@@ -7,6 +7,8 @@
 module.exports = {
   siteMetadata: {
     title: `Jeongbin Cero Choe`,
+    description: `anti-apple`,
+    copyright: `CERO.KR`,
     siteUrl: `http://cero.kr`
   },
   plugins: [

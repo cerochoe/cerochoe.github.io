@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Container from "../components/container"
 import Header from "../components/header"
 import Heading from "../components/heading"
@@ -76,9 +77,9 @@ const contacts = () => (
   </div>
 )
 
-export default () => (
+export default ( {data } ) => (
   <Container>
-    <Header />
+    <Header title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
     <Heading title="Experience"/>
     {experiences()}
     {remarks()}
@@ -86,6 +87,18 @@ export default () => (
     {education()}
     <Heading title="Contacts"/>
     {contacts()}
-    <Footer />
+    <Footer copyright={data.site.siteMetadata.copyright} startyear="2018" />
   </Container>
 )
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+        copyright
+      }
+    }
+  }
+`
