@@ -4,6 +4,7 @@ import Header from "../components/header"
 import Heading from "../components/heading"
 import Experience from "../components/experience"
 import Remark from "../components/remark"
+import Footer from "../components/footer"
 
 const experiences = () => (
   <div>
@@ -48,6 +49,7 @@ const experiences = () => (
 
 const remarks = () => (
   <div>
+    <Remark content="-"/>
     <Remark content="[1] Acquired by and became a subsidiary of Kakao Corp." />
     <Remark content="[2] Acquired by NHN Corp., and renamed to NHN Edu Corp." />
     <Remark content="[3] Acquired by Kakao Corp." />
@@ -89,5 +91,6 @@ export default () => (
     {education()}
     <Heading title="Contacts"/>
     {contacts()}
+    <Footer />
   </Container>
 )
