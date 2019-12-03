@@ -4,6 +4,7 @@ import Header from "../components/header"
 import Heading from "../components/heading"
 import Experience from "../components/experience"
 import Remark from "../components/remark"
+import Contact from "../components/contact"
 import Footer from "../components/footer"
 
 const experiences = () => (
@@ -69,15 +70,9 @@ const education = () => (
 
 const contacts = () => (
   <div>
-    <a href="http://www.linkedin.com/in/cerowind" target="blank">
-      <i className="svg-icon linkedin contact grayscale" />
-    </a>
-    <a href="http://www.facebook.com/jeongbin.choe" target="blank">
-      <i className="svg-icon facebook contact grayscale" />
-    </a>
-    <a href="mailto:cerowind@gmail.com">
-      <i className="svg-icon email contact grayscale" />
-    </a>
+    <Contact href="http://www.linkedin.com/in/cerowind" channel="linkedin" />
+    <Contact href="http://www.facebook.com/jeongbin.choe" channel="facebook" />
+    <Contact href="mailto:cerowind@gmail.com" channel="email" />
   </div>
 )
 
