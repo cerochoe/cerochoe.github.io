@@ -1,12 +1,12 @@
 @import '../styles/global.scss';
 
-a:link, a:visited, a:hover {
+.experience a:link, .experience a:visited, .experience a:hover {
   font-weight: 550;
   color: $darkText;
   text-decoration: none;
 }
 
-a:active {
+.experience a:active {
   font-weight: 550;
   color: $black;
   text-decoration: none;
