@@ -3,6 +3,7 @@ import Container from "../components/container"
 import Header from "../components/header"
 import Heading from "../components/heading"
 import Experience from "../components/experience"
+import Remark from "../components/remark"
 
 const experiences = () => (
   <div>
@@ -45,6 +46,14 @@ const experiences = () => (
   </div>
 )
 
+const remarks = () => (
+  <div>
+    <Remark content="[1] Acquired by and became a subsidiary of Kakao Corp." />
+    <Remark content="[2] Acquired by NHN Corp., and renamed to NHN Edu Corp." />
+    <Remark content="[3] Acquired by Kakao Corp." />
+  </div>
+)
+
 const education = () => (
   <div>
     <Experience
@@ -59,13 +68,13 @@ const education = () => (
 const contacts = () => (
   <div>
     <a href="http://www.linkedin.com/in/cerowind" target="blank">
-      <i class="svg-icon linkedin contact grayscale" />
+      <i className="svg-icon linkedin contact grayscale" />
     </a>
     <a href="http://www.facebook.com/jeongbin.choe" target="blank">
-      <i class="svg-icon facebook contact grayscale" />
+      <i className="svg-icon facebook contact grayscale" />
     </a>
     <a href="mailto:cerowind@gmail.com">
-      <i class="svg-icon email contact grayscale" />
+      <i className="svg-icon email contact grayscale" />
     </a>
   </div>
 )
@@ -75,6 +84,7 @@ export default () => (
     <Header />
     <Heading title="Experience"/>
     {experiences()}
+    {remarks()}
     <Heading title="Education"/>
     {education()}
     <Heading title="Contacts"/>

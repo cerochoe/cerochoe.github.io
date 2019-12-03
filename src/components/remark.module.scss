@@ -1,0 +1,27 @@
+@import "../styles/global.scss";
+
+.remark {
+  color: $lightText;
+}
+
+@media (min-width: 481px) {
+  .remark {
+    margin: 6px 0 0 1px;
+    font-size: 0.85rem;
+    line-height: 0.85rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .remark {
+    margin: 4px 0 0 1px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  .remark {
+    margin: 4px 0 0 1px;
+    font-size: 12px;
+  }
+}
