@@ -4,5 +4,5 @@ position: "iOS"
 from: "2016-10-01"
 at: "Acciio Inc."
 url: "https://acciio.com"
-note: "Acquired by and became a subsidiary of Kakao Corp."
+note: "Acquired by and being a subsidiary of Kakao Corp."
 ---
