@@ -8,86 +8,66 @@ import Remark from "../components/remark"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
 
-const experiences = () => (
-  <div>
-    <Experience
-     from="Oct 2016"
-     to="Now"
-     title="Software Engineer" 
-     position="iOS" 
-     at="Acciio Inc." 
-     url="https://acciio.com"
-     remark="[1]" />
-    <Experience 
-     from="Apr 2014"
-     to="Oct 2016" 
-     title="Software Engineer" 
-     position="iOS / Web" 
-     at="IAMCOMPANY Inc." 
-     url="http://www.nhnedu.com" 
-     remark="[2]" />
-    <Experience
-     from="Jun 2012" 
-     to="Mar 2014" 
-     title="Software Engineer" 
-     position="iOS" 
-     at="Kakao Corp."
-     url="https://kakaocorp.com" />
-    <Experience
-     from="Mar 2011" 
-     to="Jun 2012" 
-     title="Software Engineer" 
-     position="iOS / Backend" 
-     at="ISEEYOU Co., Ltd." 
-     remark="[3]" />
-    <Experience
-     from="Jan 2010" 
-     to="Feb 2011" 
-     title="Undergraduate Research Assistant"  
-     at="CV Lab at POSTECH" 
-     url="http://cvlab.postech.ac.kr/lab/" />
-  </div>
+const getExperience = ({ edges }) => {
+  let remarkCount = 0
+  const remarkDatas = edges.map(({ node }) => (
+    node.frontmatter.note ? { index: ++remarkCount, content: node.frontmatter.note } : null
+  ))
+
+  const experiences = () => (
+    edges.map(({ node }, i) => (
+      <Experience
+      from={node.frontmatter.from}
+      to={node.frontmatter.to}
+      title={node.frontmatter.title}
+      position={node.frontmatter.position}
+      at={node.frontmatter.at}
+      url={node.frontmatter.url}
+      remark={remarkDatas[i] ? `[${remarkDatas[i].index}]` : ""} 
+      />
+    ))
+  )
+
+  const remarks = () => (
+    remarkCount > 0 ? (
+      <div>
+        <Remark content="-"/>
+        {remarkDatas.filter((remark) => remark).map((remark) => (
+          <Remark content={`[${remark.index}] ${remark.content}`} />
+        ))}
+      </div>
+    ) : (
+      <div />
+    )
+  )
+  return (
+    <div>
+      {experiences()}
+      {remarks()}
+    </div>
+  )
+}
+
+const getContacts = ({ contacts }) => (
+  contacts.map(({ url, channel }) => (
+    <Contact href={url} channel={channel} />
+  ))
 )
 
-const remarks = () => (
-  <div>
-    <Remark content="-"/>
-    <Remark content="[1] Acquired by and became a subsidiary of Kakao Corp." />
-    <Remark content="[2] Acquired by NHN Corp., and renamed to NHN Edu Corp." />
-    <Remark content="[3] Acquired by Kakao Corp." />
-  </div>
-)
-
-const education = () => (
-  <div>
-    <Experience
-     from="2008" 
-     to="2016" 
-     title="B.S. in Computer Science and Engineering" 
-     at="POSTECH"
-     url="http://postech.edu" />
-  </div>
-)
-
-const contacts = () => (
-  <div>
-    <Contact href="http://www.linkedin.com/in/cerowind" channel="linkedin" />
-    <Contact href="http://www.facebook.com/jeongbin.choe" channel="facebook" />
-    <Contact href="mailto:cerowind@gmail.com" channel="email" />
-  </div>
-)
-
-export default ( {data } ) => (
+export default ({ data }) => (
   <Container>
     <Header title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
+
     <Heading title="Experience"/>
-    {experiences()}
-    {remarks()}
+    {getExperience(data.experience)}
+
     <Heading title="Education"/>
-    {education()}
+    {getExperience(data.education)}
+
     <Heading title="Contacts"/>
-    {contacts()}
-    <Footer copyright={data.site.siteMetadata.copyright} startyear="2018" />
+    {getContacts(data.site.siteMetadata)}
+
+    <Footer copyright={data.site.siteMetadata.copyright.name} startyear={data.site.siteMetadata.copyright.startYear} />
   </Container>
 )
 
@@ -97,7 +77,48 @@ export const query = graphql`
       siteMetadata {
         title
         description
-        copyright
+        copyright {
+          name
+          startYear
+        }
+        contacts {
+          url
+          channel
+        }
+      }
+    }
+    experience: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/experience/"}}, sort: {fields: frontmatter___to, order: DESC}) {
+      edges {
+        node {
+          fileAbsolutePath
+          id
+          frontmatter {
+            title
+            position
+            from(formatString: "MMM YYYY")
+            to(formatString: "MMM YYYY")
+            at
+            url
+            note
+          }
+        }
+      }
+    }
+    education: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/education/"}}, sort: {fields: frontmatter___to, order: DESC}) {
+      edges {
+        node {
+          fileAbsolutePath
+          id
+          frontmatter {
+            title
+            position
+            from(formatString: "YYYY")
+            to(formatString: "YYYY")
+            at
+            url
+            note
+          }
+        }
       }
     }
   }
