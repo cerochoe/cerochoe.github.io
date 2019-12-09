@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Container from "../components/container"
 import Header from "../components/header"
 import Heading from "../components/heading"
-import Remark from "../components/remark"
 import Footer from "../components/footer"
 
 export default ({ data }) => (
