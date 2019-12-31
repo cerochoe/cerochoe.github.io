@@ -1,24 +1,24 @@
 @import '../styles/global.scss';
 
 .experience a:link, .experience a:visited, .experience a:hover {
-  font-weight: 550;
+  font-weight: 600;
   color: $darkText;
   text-decoration: none;
 }
 
 .experience a:active {
-  font-weight: 550;
+  font-weight: 600;
   color: $black;
   text-decoration: none;
 }
 
 .period {
-  font-weight: 550;
+  font-weight: 500;
   color: $lightText;
 }
 
 .remark {
-  font-weight: 550;
+  font-weight: 500;
   position: relative;
 }
 
@@ -56,7 +56,8 @@
   }
 
   .period {
-    font-size: 14px;
+    font-size: 13px;
+    margin-bottom: 1px;
   }
 
   .title {
@@ -84,7 +85,8 @@
   }
 
   .period {
-    font-size: 13px;
+    font-size: 12px;
+    margin-bottom: 1px;
   }
 
   .title {

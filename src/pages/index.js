@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 import Container from "../components/container"
 import Header from "../components/header"
 import Heading from "../components/heading"
@@ -29,15 +30,13 @@ const getExperience = ({ edges }) => {
   )
 
   const remarks = () => (
-    remarkCount > 0 ? (
+    remarkCount > 0 && (
       <div>
         <Remark content="-"/>
         {remarkDatas.filter((remark) => remark).map((remark) => (
           <Remark content={`[${remark.index}] ${remark.content}`} />
         ))}
       </div>
-    ) : (
-      <div />
     )
   )
   return (
@@ -55,20 +54,29 @@ const getContacts = ({ contacts }) => (
 )
 
 export default ({ data }) => (
-  <Container>
-    <Header title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
+  <>
+    <Helmet title={data.site.siteMetadata.title}>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%26display=swap" rel="stylesheet" />
+      <meta name="description" content={data.site.siteMetadata.description} />
+      <meta name="og:url" content={data.site.siteMetadata.siteUrl} />
+      <meta name="og:title" content={data.site.siteMetadata.title} />
+      <meta name="og:description" content={data.site.siteMetadata.description} />
+    </Helmet>
+    <Container>
+      <Header title={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
 
-    <Heading title="Experience"/>
-    {getExperience(data.experience)}
+      <Heading title="Experience"/>
+      {getExperience(data.experience)}
 
-    <Heading title="Education"/>
-    {getExperience(data.education)}
+      <Heading title="Education"/>
+      {getExperience(data.education)}
 
-    <Heading title="Contacts"/>
-    {getContacts(data.site.siteMetadata)}
+      <Heading title="Contacts"/>
+      {getContacts(data.site.siteMetadata)}
 
-    <Footer copyright={data.site.siteMetadata.copyright.name} startyear={data.site.siteMetadata.copyright.startYear} />
-  </Container>
+      <Footer copyright={data.site.siteMetadata.copyright.name} startyear={data.site.siteMetadata.copyright.startYear} />
+    </Container>
+  </>
 )
 
 export const query = graphql`
@@ -77,6 +85,7 @@ export const query = graphql`
       siteMetadata {
         title
         description
+        siteUrl
         copyright {
           name
           startYear

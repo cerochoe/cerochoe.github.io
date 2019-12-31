@@ -34,7 +34,15 @@ module.exports = {
       options: {
         name: `src`,
         path: `${__dirname}/src/`,
-      },
+      }
+    },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `UA-154260949-1`,
+        head: true,
+        anonymize: true
+      }
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
