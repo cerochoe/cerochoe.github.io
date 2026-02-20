@@ -27,12 +27,10 @@
 
   <section class="summary" aria-label="Career summary">
     <p>
-      AI-focused product engineer with {careerYears}+ years of software engineering experience
-      since 2011.
+      AI-focused product engineer with {careerYears}+ years of software engineering experience.
     </p>
     <p>
-      Building practical AI services across mobile and web, with ongoing work in healthcare
-      products.
+      Building practical AI services across mobile and web.
     </p>
   </section>
 
@@ -61,8 +59,7 @@
   <section class="section" aria-labelledby="interests-title">
     <h2 id="interests-title">Interests</h2>
     <p>
-      Large Language Models (LLMs) · Mobile Development · Frontend Development · UI/UX Design &
-      Engineering
+      Large Language Models · Mobile Development · Frontend Development · UI/UX Engineering · Alcohol
     </p>
   </section>
 
@@ -73,7 +70,7 @@
       <li>
         <p class="period">Apr 2023 - Present</p>
         <div class="content">
-          <h3>AIPLE Inc.</h3>
+          <h3>AIPLE Inc. (acquired by XinobiAI Inc.)</h3>
           <p class="role">Co-Founder</p>
           <p class="services">Wevery · unswt</p>
         </div>
@@ -114,13 +111,7 @@
           <p class="services">Viva Game SDK · Alchemist Mobile</p>
         </div>
       </li>
-    </ol>
-  </section>
 
-  <section class="section" aria-labelledby="research-title">
-    <h2 id="research-title">Research</h2>
-
-    <ol class="timeline">
       <li>
         <p class="period">Dec 2009 - Feb 2012</p>
         <div class="content">
@@ -199,7 +190,7 @@
 
   .header h2 {
     margin: 0.5rem 0 0;
-    font-size: 0.93rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: var(--muted);
   }
@@ -316,6 +307,26 @@
       padding: 3rem 1.4rem 4rem;
     }
 
+    .summary {
+      font-size: 1.02rem;
+    }
+
+    .section h2 {
+      font-size: 0.9rem;
+    }
+
+    .section > p {
+      font-size: 0.98rem;
+    }
+
+    .skills-list dt {
+      font-size: 0.92rem;
+    }
+
+    .skills-list dd {
+      font-size: 0.96rem;
+    }
+
     .skills-list div {
       grid-template-columns: 140px 1fr;
       gap: 0.7rem;
@@ -329,7 +340,21 @@
     }
 
     .period {
+      font-size: 0.86rem;
       padding-top: 0.12rem;
+    }
+
+    .content h3 {
+      font-size: 1.1rem;
+    }
+
+    .role,
+    .services {
+      font-size: 0.95rem;
+    }
+
+    .footer p {
+      font-size: 0.86rem;
     }
   }
 
