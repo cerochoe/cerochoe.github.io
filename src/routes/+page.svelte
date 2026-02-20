@@ -197,9 +197,10 @@
     letter-spacing: -0.02em;
   }
 
-  .header p {
+  .header h2 {
     margin: 0.5rem 0 0;
     font-size: 0.93rem;
+    font-weight: 500;
     color: var(--muted);
   }
 
